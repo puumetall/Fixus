@@ -1,0 +1,270 @@
+/*Reset*/
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+/*End Reset*/
+/*Typo*/
+html, body{
+    overflow-x: hidden;
+  }
+  @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+  
+  html {font-size: 100%;} /*16px*/
+  
+  body {
+    background: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.75;
+    color: #000000;
+  }
+  
+  p {margin-bottom: 1rem;}
+  
+  h1, h2, h3, h4, h5 {
+    margin: 3rem 0 1.38rem;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 400;
+    line-height: 1.3;
+  }
+  .BigTxt{
+    font-size: 5.61rem;
+  }
+  h1 {
+    margin-top: 0;
+    font-size: 4.209rem;
+  }
+  
+  h2 {font-size: 2.8rem;}
+  
+  h3 {font-size: 2.369rem;}
+  
+  h4 {font-size: 1.777rem;}
+  
+  h5 {font-size: 1.2rem;}
+  
+  small, .text_small {font-size: 0.75rem;}
+  /*END TYPO*/
+  /*Global*/
+a {
+    text-decoration: none;
+  }
+  ul {
+    list-style: none;
+  }
+  .btn {
+      padding: 1em 2em;
+      border-radius:  30px;
+      margin: 1em;
+  }
+  /*END GLOBAL STYLES*/
+  /*Hero*/
+  .hero{
+    background-color: white;
+    height: auto;
+    
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+      
+      .sticky + .hero_slogan {
+        padding-top: 102px;
+      }
+    .logo img {
+      height: 4em;
+    }
+    header{
+      max-width: 100%;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 2em;
+    }
+    .left {
+        display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1em 2em;
+    }
+    nav ul {
+      display: flex;
+    }
+    nav a{
+      margin-left: 1em;
+      color: black;
+      font-weight: bold;
+    }
+    .dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+      }
+      
+      .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+      }
+      
+      .dropdown-content a:hover {background-color: #ddd;}
+      
+      .dropdown:hover .dropdown-content {display: block;}
+      
+      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  /*End Hero*/
+/* Hero Slogan */
+.hero_slogan {
+    width: 95%;
+    margin: 0 auto;
+    background-image: url("../assets/koduleht.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 80vh;
+}
+/* End Hero Slogan */
+/* Products */
+.products_heading {
+    display: flex;
+}
+.container {
+    width: 60%;
+    margin: 0 auto;
+}
+.products_start{
+    display: flex;
+    justify-content: center;
+}
+.products_intro {
+    text-align: center;
+  display: flex;
+  flex-direction:  column;
+  justify-content: center;
+  align-items: center;
+}
+.products_intro > div{
+    margin: -20px;
+}
+.products_title{
+    font-weight: bold;
+}
+.products_list {
+    width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 15px;
+    }
+    
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 1 / 3 / 2 / 4; }
+    .div4 { grid-area: 1 / 4 / 2 / 5; }
+    .div5 { grid-area: 1 / 5 / 2 / 6; }
+    .div6 { grid-area: 2 / 1 / 3 / 2; }
+    .div7 { grid-area: 2 / 2 / 3 / 3; }
+    .div8 { grid-area: 2 / 3 / 3 / 4; }
+    .div9 { grid-area: 2 / 4 / 3 / 5; }
+    .div10 { grid-area: 2 / 5 / 3 / 6; }
+.products_list img {
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+}
+.products_list div {
+    text-align: center;
+}
+.products_list h5 {
+    font-weight: bold;
+}
+.products_list p{
+    font-size: 0.8em;
+    word-wrap: break-word;
+}
+/* End Products */
