@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400&family=Barlow:wght@200;300&display=swap" rel="stylesheet">
@@ -12,6 +11,8 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
     <script>
     $(document).ready(function() {
       var $header = $("header"),
@@ -28,25 +29,26 @@
           }
       });
       $('.customer-logos').slick({
-        slidesToShow: 6,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 1500,
-        arrows: false,
-        dots: false,
-        pauseOnHover: false,
-        responsive: [{
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 4
-            }
-        }, {
-            breakpoint: 520,
-            settings: {
-                slidesToShow: 3
-            }
-        }]
-    });
+            speed: 500,
+            slidesToShow: 6,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 1500,
+            arrows: false,
+            dots: false,
+            pauseOnHover: false,
+            responsive: [{
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 4
+                }
+            }, {
+                breakpoint: 520,
+                settings: {
+                    slidesToShow: 3
+                }
+            }]
+        });
     });
 
     </script>
@@ -186,21 +188,26 @@
           <button type="button" name="button" class="products_btn">Leia lähim fixus autokaupade pood </button>
         </div>
     </section>
-    <section class="Slider">
-      <div class="customer-logos slider">
-        <div class="slide"><img src="assets/bosch.png"></div>
-        <div class="slide"><img src="assets/continental.png"></div>
-        <div class="slide"><img src="assets/defa.png"></div>
-        <div class="slide"><img src="assets/ferodo.png"></div>
-        <div class="slide"><img src="assets/gates.png"></div>
-        <div class="slide"><img src="assets/hengst.png"></div>
-        <div class="slide"><img src="assets/k27.png"></div>
-        <div class="slide"><img src="assets/sachs.png"></div>
-        <div class="slide"><img src="assets/kyb.png"></div>
-        <div class="slide"><img src="assets/lemforder.png"></div>
-        <div class="slide"><img src="assets/luk.png"></div>
-        <div class="slide"><img src="assets/xloils.png"></div>
+    <section class="carslider_section">
+      <div class="slider_box">
+        <div class="customer-logos slider">
+            <div class="slide"><img src="assets/bosch.png"></div>
+            <div class="slide"><img src="assets/continental.png"></div>
+            <div class="slide"><img src="assets/defa.png"></div>
+            <div class="slide"><img src="assets/ferodo.png"></div>
+            <div class="slide"><img src="assets/gates.png"></div>
+            <div class="slide"><img src="assets/hengst.png"></div>
+            <div class="slide"><img src="assets/k27.png"></div>
+            <div class="slide"><img src="assets/sachs.png"></div>
+            <div class="slide"><img src="assets/kyb.png"></div>
+            <div class="slide"><img src="assets/lemforder.png"></div>
+            <div class="slide"><img src="assets/luk.png"></div>
+            <div class="slide"><img src="assets/xloils.png"></div>
+        </div>
       </div>
-    </section>
+  </section>
+  <section>
+
+  </section>
 </body>
 </html>
