@@ -11,6 +11,9 @@
     <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <script src=
+    "https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js">
+   </script>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.css">
     <script>
@@ -27,7 +30,17 @@
             $("#logo").css("height", "4em")
             $("header").removeClass("shadow");
           }
+          if(fromTop > 60){
+            $(".scroll_to_top").addClass("scroll_active", 500, "easeOutBounce");
+            $(".scroll_to_top").removeClass("scroll_inactive");
+          } else {
+            $(".scroll_to_top").removeClass("scroll_active");
+            $(".scroll_to_top").addClass("scroll_inactive", 500, "easeOutBounce");
+          }
       });
+      $(".scroll_to_top").click(function() {
+        $("html, body").animate({scrollTop: 0}, 1000);
+     });
       $('.customer-logos').slick({
             speed: 500,
             slidesToShow: 6,
@@ -86,12 +99,18 @@
             </div>
             <div>
                 <div class="dropdown">
-                    <button class="dropbtn">Eesti</button>
+                    <button class="dropbtn">
+                      <img src="assets/eesti.png" alt="">
+                    </button>
                     <div class="dropdown-content">
-                      <a href="#">English</a>
+                      <a href="#">
+                        <img src="assets/vene.jpg" alt="">
+                      </a>
                     </div>
                   </div>
-                <button>E-pood</button>
+            </div>
+            <div class="header_button">
+              <button type="button" name="button" class="header_btn">E-pood</button>
             </div>
         </header>
     </section>
@@ -206,8 +225,183 @@
         </div>
       </div>
   </section>
-  <section>
+  <section class="car_services">
+    <div class="car_services_color">
+      <div class="car_services_info">
+        <div class="car_services_info_start">
+          <img src="assets/ruut2.jpg" alt="">
+        </div>
+        <h2>Fixus autoteenindused</h2>
+        <div class="car_services_info_text">
+          <h4>45 Fixus autoteenindust üle Eesti - leia endale sobivaim!</h4>
+        </div>
+      </div>
 
+    </div>
+    <div class="car_services_info_end">
+      <img src="assets/car.png" alt="">
+    </div>
+    <div class="car_services_button">
+      <button type="button" name="button" class="car_services_btn">
+        Leia lähim autoteenindus
+      </button>
+    </div>
   </section>
+  <section>
+    <div class="bike_products">
+      <div class="bike_products_info">
+        <div class="bike_products_start">
+          <img src="assets/ruut3.jpg" alt="">
+        </div>
+        <h2>Fixus jalgrattad ja vabaajatooted</h2>
+        <div class="bike_products_text">
+          <h4>Valikus jalgrattad, tarvikud, varuosad, riided ja kõik muu jalgrattaspordiga seonduv varustus ...</h4>
+        </div>
+      </div>
+      <div class="bike_products_list">
+        <div class="">
+          <img src="assets/jalgrattad.png" alt="">
+          <h5>Jalgrattad</h5>
+          <p>Linnarattad, maastikurattad, maanteerattad, lasterattad, tõukerattad, elektrirattad, trikirattad, hübriidrattad</p>
+        </div>
+        <div class="">
+          <img src="assets/tarvikud.png" alt="">
+          <h5>Lisavarustus</h5>
+          <p>Pakiraamid, korvid, kotid, porilauad, joogipudelid, spidomeetrid, lukud, kellad, sarved, tugijalad, peeglid, tuled, lastetoolid</p>
+        </div>
+        <div class="">
+          <img src="assets/kiiver.png" alt="">
+          <h5>Tarvikud</h5>
+          <p>Kiivrid, kingad, riided, prillid, toidulisandid, treeningpukid, rattahoidikud, autohoidikud, määrded, kemikaalid, tööriistad</p>
+        </div>
+        <div class="">
+          <img src="assets/varuosad2.png" alt="">
+          <h5>Jalgrataste varuosad</h5>
+          <p>Rehvid, jooksud, ketid, kassetid, vändad, pedaalid, käiguvahetajad, trossid, kõrid, amordid, sadulad, pidurid, hammasrattad</p>
+        </div>
+        <div class="">
+          <img src="assets/jalgratta.png" alt="">
+          <h5>Jalgrataste hooldus / remont</h5>
+          <p>Jalgrataste ülevaatus, lihthooldus, täishooldus, remont, rattapesu, lisavarustuse paigaldus.</p>
+        </div>
+      </div>
+    </div>
+    <div class="bike_products_button">
+      <button type="button" name="button" class="bike_products_btn">
+        Leia lähim fixus rattapood
+      </button>
+    </div>
+  </section>
+  <section class="bikeslider_section">
+    <div class="slider_box">
+      <div class="customer-logos slider">
+          <div class="slide"><img src="assets/abus.png"></div>
+          <div class="slide"><img src="assets/adriatica.png"></div>
+          <div class="slide"><img src="assets/drag.png"></div>
+          <div class="slide"><img src="assets/fuji2.png"></div>
+          <div class="slide"><img src="assets/fulcrum.png"></div>
+          <div class="slide"><img src="assets/notubes.png"></div>
+          <div class="slide"><img src="assets/gaerne.png"></div>
+          <div class="slide"><img src="assets/sigma.png"></div>
+          <div class="slide"><img src="assets/marwi.png"></div>
+          <div class="slide"><img src="assets/schwalbe.png"></div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <div class="footer_info">
+      <div class="footer_form">
+        <h5>Jäta siia ainult Fixus kaubamärki puudutavad üldised  küsimused.</h5>
+        <form class="footer_fm" action="index.html" method="post">
+          <div class="form_name">
+            <input type="text" name="Name" placeholder="Nimi">
+          </div>
+          <div class="form_email">
+            <input type="text" name="Email" placeholder="E-mail">
+          </div>
+          <div class="footer_message">
+            <textarea name="Message" rows="2" cols="61" placeholder="Sõnum"></textarea>
+          </div>
+          <div class="form_submit">
+            <input type="submit" name="Submit" value="Saada Kiri" class="fm_submit">
+          </div>
+        </form>
+      </div>
+      <div class="footer_services">
+        <h4>Teenused</h4>
+        <ul>
+          <li>
+            <a href="#">E-pood</a>
+          </li>
+          <li>
+            <a href="#">Autokaubad</a>
+          </li>
+          <li>
+            <a href="#">Autoteenindused</a>
+          </li>
+          <li>
+            <a href="#">Rattapoed</a>
+          </li>
+          <li>
+            <a href="#">Fixus autokeemia</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_extra">
+        <h4>Lisainfo</h4>
+        <ul>
+          <li>
+            <a href="#">Balti Autoosad</a>
+          </li>
+          <li>
+            <a href="#">Fixus</a>
+          </li>
+          <li>
+            <a href="#">Liising</a>
+          </li>
+          <li>
+            <a href="#">Fixus meedia</a>
+          </li>
+          <li>
+            <a href="#">Andmekaitsetingimused</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer_news">
+        <h4>Uudiskiri</h4>
+        <div class="news_button">
+          <input type="text" name="Email" placeholder="E-maili aadress" class="">
+          <button type="button" name="button" class="news_btn">
+            <div class="news_separator">
+              &#124;
+            </div>
+            Liitu
+            <img src="assets/nool.png" alt="">
+          </button>
+        </div>
+        <p>Ole kursis parimate pakkumistega!</p>
+      </div>
+    </div>
+  </section>
+  <section class="page_end">
+    <div class="page_end_container">
+      <div class="page_end_text">
+        <p>Kõik õigused kaitstud © Balti Autoosad AS 2022 | Kodulehe tegi ja hooldab Digituul 2022</p>
+      </div>
+      <div class="page_end_link">
+        <a href="#">
+          <img src="assets/facelogo.png" alt="">
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="ask_button">
+    <button type="button" name="button" class="ask_btn">küsi pakkumist</button>
+  </div>
+  <div class="scroll_to_top">
+    <button type="button" name="button" class="scroll_btn">
+      <img src="assets/nooled.png" alt="">
+    </button>
+  </div>
 </body>
 </html>

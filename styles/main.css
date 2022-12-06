@@ -99,7 +99,7 @@ html, body{
 
   h3 {font-size: 2.369rem;}
 
-  h4 {font-size: 1.777rem;}
+  h4 {font-size: 1.6rem;}
 
   h5 {font-size: 1.2rem;}
 
@@ -175,12 +175,16 @@ a {
     .dropdown {
         position: relative;
         display: inline-block;
-      }
 
+      }
+      .dropbtn{
+        border: none;
+        background-color: white;
+      }
       .dropdown-content {
         display: none;
         position: absolute;
-        background-color: #f1f1f1;
+        background-color: #1B1E1E;
         min-width: 160px;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
@@ -193,11 +197,25 @@ a {
         display: block;
       }
 
-      .dropdown-content a:hover {background-color: #ddd;}
 
       .dropdown:hover .dropdown-content {display: block;}
 
-      .dropdown:hover .dropbtn {background-color: #3e8e41;}
+      .header_button{
+        width: 18em;
+        height: 7.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .header_btn {
+        background-color: #164da8;
+        color: white;
+        border: none;
+        padding: 15px 32px;
+        text-transform: uppercase;
+        text-decoration: none;
+        text-align: center;
+      }
   /*End Hero*/
 /* Hero Slogan */
 .hero_slogan {
@@ -296,8 +314,7 @@ a {
   padding: 15px 32px;
   text-transform: uppercase;
   text-decoration: none;
-   text-align: center;
-
+  text-align: center;
 }
 
 /* End Products */
@@ -425,3 +442,265 @@ a {
       display: none;
   }
 /* End Slider */
+/* Car Services */
+.car_services_color {
+  background-color: #164da8;
+  color: white;
+  height: 42em;
+}
+.car_services_info {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+
+}
+.car_services_info_start {
+  margin-top: 8em;
+}
+.car_services_info_text {
+  margin-top: -3em;
+  opacity: 0.5;
+}
+.car_services_info_end {
+  z-index: 1;
+  margin-top: -16em;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 4em;
+}
+.car_services_button {
+  width: 18em;
+  height: 7.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.car_services_btn {
+  background-color: #164da8;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+/* End Car Services */
+/* Bike Products Start */
+.bike_products{
+  margin-top: 4em;
+}
+.bike_products_info{
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction:  column;
+  align-items: center;
+}
+.bike_products_text{
+  opacity: 0.5;
+  margin-top: -3em;
+  margin-bottom: 4em;
+}
+.bike_products_text h4{
+  font-size: 1.5em;
+}
+.bike_products_list{
+  width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+}
+.bike_products_list img {
+      height: 100px;
+      width: auto;
+      margin: 0 auto;
+}
+.bike_products_list div {
+  text-align: center;
+}
+.bike_products_list p{
+  margin-top: -1em;
+  font-size: 0.9em;
+  opacity: 0.5;
+}
+.bike_products_button {
+  width: 18em;
+  height: 7.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.bike_products_btn {
+  background-color: #2eb82e;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+/* End Bike Products */
+/* Footer Start */
+.footer {
+  background-color: #f5efed;
+}
+.footer_info{
+  margin-top: 8em;
+  display: flex;
+  justify-content: space-between;
+  width: 1400px;
+  margin: 0 auto;
+
+}
+.footer_fm {
+  background-color: none;
+  margin-top: -2em;
+}
+.footer_fm div{
+  padding: 0.7em 0;
+}
+.footer_fm input {
+  width: 26em;
+}
+.footer_fm input[type="text"], textarea{
+  background-color: #f5efed;
+  border: 1px solid #164da8;
+  resize: none;
+  padding: 0.8em;
+  font-size: 1.2em;
+}
+.footer_fm ::placeholder{
+  font-family: 'Barlow', sans-serif;
+}
+.form_submit{
+  width: 12em;
+  height: 7.5em;
+  display: flex;
+  align-items: center;
+  margin-top: -1.5em;
+}
+.fm_submit {
+  background-color: #164da8;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
+.footer ul {
+  list-style: none;
+  padding-left: 0;
+}
+.footer li{
+  padding-top: 1em;
+}
+.footer a {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  font-weight: 300;
+  font-family: 'Barlow', sans-serif;
+}
+.news_button{
+  display: flex;
+  color: white;
+  font-family: 'Barlow', sans-serif;
+}
+.news_button input[type="text"] {
+  background-color: #164da8;
+  border: none;
+  padding: 0.8em;
+  font-size: 1.2em;
+  font-weight: 300;
+  width: 16em;
+}
+.news_button ::placeholder{
+  color: white;
+}
+.news_btn{
+  background-color: #164da8;
+  display: flex;
+  align-items: center;
+  border: none;
+  text-transform: uppercase;
+
+}
+.news_btn img{
+  padding: 0 1em 0;
+}
+.news_separator{
+  padding-right: 1.5em;
+}
+.footer_news p{
+ opacity: 0.5;
+ margin-top: 1em;
+}
+/* End Footer */
+/* Page end */
+.page_end {
+  background-color: #164da8;
+  color: white;
+  height: 5em;
+  display: flex;
+  align-items: center;
+}
+.page_end_container{
+  width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+
+}
+.page_end_text {
+  padding-top: 1em;
+}
+.page_end_link {
+  padding-top: 0.5em;
+}
+.ask_button{
+  width: 20em;
+  height: 7.5em;
+  position: fixed;
+  bottom: 3.5em;
+  right: 1.2em;
+}
+.ask_btn {
+  background-color: #ffc803;
+  border: 3px solid white;
+  padding: 15px 50px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.1em;
+  font-size: 1.3em;
+}
+.scroll_btn {
+  width: 3em;
+  height: 5em;
+  background-color: #164da8;
+  border: 3px solid white;
+}
+.scroll_btn img{
+  width: 1em;
+  margin: 0 auto;
+  padding-bottom: 2em;
+}
+.scroll_active {
+  position: fixed;
+  bottom: 6.2em;
+  right: 1em;
+
+}.scroll_inactive {
+  position: fixed;
+  bottom: -40em;
+  right: 1em;
+}
+/* End page end */
